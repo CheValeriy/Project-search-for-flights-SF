@@ -1,0 +1,55 @@
+.main {
+    width: 100%;
+    flex: 1;
+
+    .container {
+        max-width: 1090px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+
+        display: flex;
+        flex-direction: row;
+        column-gap: 50px;
+
+        .aside {
+            width: 100%;
+            max-width: 275px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 47px;
+        }
+    
+        .ticketsArea {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            
+            .menu {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .main {
+
+        .container {
+            padding: 20px 10px;
+
+            .aside {
+                display: none;
+            }
+
+            .ticketsArea {
+
+                .menu {
+                    display: block;
+                }
+            }
+        }
+    }
+}
